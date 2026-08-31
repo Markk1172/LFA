@@ -83,10 +83,19 @@ $$
 Responda:
 
 1. Quantos símbolos existem no alfabeto?
+> **Resposta:** Existem 3 símbolos.
+
 2. Quais são os símbolos?
+> **Resposta:** São os símbolos `a`, `b` e `c`.
+
 3. O símbolo `a` pertence ao alfabeto?
+> **Resposta:** Sim ($a \in \Sigma$).
+
 4. O símbolo `d` pertence ao alfabeto?
+> **Resposta:** Não ($d \notin \Sigma$).
+
 5. Escreva uma palavra formada por símbolos desse alfabeto.
+> **Resposta:** Exemplo: `abc` (outras opções: `a`, `ba`, `cab`, `aabcc`).
 
 ---
 
@@ -207,11 +216,11 @@ Classifique cada sequência como **palavra válida** ou **não válida**:
 
 | Sequência | Válida? | Justificativa |
 | --------- | ------- | ------------- |
-| `0101`    |         |               |
-| `00110`   |         |               |
-| `012`     |         |               |
-| `111`     |         |               |
-| `10a`     |         |               |
+| `0101`    | Válida  | Todos os símbolos são `0` ou `1` |
+| `00110`   | Válida  | Todos os símbolos são `0` ou `1` |
+| `012`     | Não válida | `2` não pertence ao alfabeto |
+| `111`     | Válida  | Todos os símbolos pertencem ao alfabeto |
+| `10a`     | Não válida | `a` não pertence ao alfabeto |
 
 ---
 
@@ -332,11 +341,22 @@ $$
 Determine se as afirmações são **verdadeiras ou falsas**:
 
 1. $0 \in \Sigma$
+> **Resposta:** Verdadeiro. O `0` é um elemento/símbolo do conjunto.
+
 2. $1 \in \Sigma$
+> **Resposta:** Verdadeiro. O `1` é um elemento/símbolo do conjunto.
+
 3. $01 \in \Sigma$
+> **Resposta:** Falso. `01` é uma palavra de 2 símbolos, não um símbolo unitário de $\Sigma$.
+
 4. $01 \in \Sigma^*$
+> **Resposta:** Verdadeiro. É uma palavra formada exclusivamente por símbolos de $\Sigma$.
+
 5. $2 \in \Sigma$
+> **Resposta:** Falso. O símbolo `2` não pertence ao conjunto $\Sigma$.
+
 6. $101 \in \Sigma^*$
+> **Resposta:** Verdadeiro. Todos os seus símbolos pertencem a $\Sigma$.
 
 Justifique cada resposta.
 
@@ -443,11 +463,22 @@ $$
 Determine se cada palavra pertence à linguagem:
 
 1. $0 \in L$
+> **Resposta:** Sim (pertence ao conjunto).
+
 2. $01 \in L$
+> **Resposta:** Sim (pertence ao conjunto).
+
 3. $0111 \in L$
+> **Resposta:** Sim (pertence ao conjunto).
+
 4. $10 \in L$
+> **Resposta:** Não (não pertence ao conjunto).
+
 5. $111 \in L$
+> **Resposta:** Não (não pertence ao conjunto).
+
 6. $011 \in L$
+> **Resposta:** Sim (pertence ao conjunto).
 
 ---
 
@@ -551,9 +582,16 @@ L = {b^n \mid n \geq 1}
 $$
 
 1. Escreva as cinco primeiras palavras.
+> **Resposta:** `b`, `bb`, `bbb`, `bbbb`, `bbbbb`
+
 2. Explique o significado de $b^n$.
+> **Resposta:** Representa $n$ repetições/ocorrências consecutivas do símbolo `b`.
+
 3. A palavra `bbbbbb` pertence à linguagem?
+> **Resposta:** Sim, pois tem 6 ocorrências de `b` ($b^6$) e cumpre a regra $n \geq 1$.
+
 4. A palavra vazia ($\varepsilon$) pertence à linguagem?
+> **Resposta:** Não, pois $\varepsilon$ equivale a zero ocorrências ($b^0$), mas a regra exige $n \geq 1$.
 
 ---
 
@@ -655,11 +693,18 @@ $$
 L={\varepsilon}
 $$
 
+> **Explicação:** Em **A** ($L=\emptyset$), a linguagem não possui nenhuma palavra (conjunto vazio). Em **B** ($L=\{\varepsilon\}$), a linguagem possui exatamente 1 palavra (a palavra de comprimento zero).
+
 Depois responda:
 
 1. Qual delas possui uma palavra?
+> **Resposta:** A linguagem **B** ($L=\{\varepsilon\}$).
+
 2. Qual delas não possui nenhuma palavra?
+> **Resposta:** A linguagem **A** ($L=\emptyset$).
+
 3. Qual é o comprimento da palavra $\varepsilon$?
+> **Resposta:** Comprimento zero ($|\varepsilon| = 0$).
 
 ---
 
@@ -766,10 +811,20 @@ $$
 Identifique:
 
 1. O conjunto de variáveis.
+> **Resposta:** $V = \{S, A\}$
+
 2. O conjunto de terminais.
+> **Resposta:** $T = \{0, 1\}$
+
 3. O conjunto de produções.
+> **Resposta:** $P = \{S\rightarrow0A,\ A\rightarrow1\}$
+
 4. O símbolo inicial.
+> **Resposta:** $S$
+
 5. Qual palavra pode ser gerada por essa gramática?
+> **Resposta:** A palavra `01`.  
+> *Passo a passo:* $S \Rightarrow 0A \Rightarrow 01$
 
 ---
 
@@ -866,9 +921,16 @@ $$
 Começando com $S$:
 
 1. Aplique a regra uma vez.
+> **Resposta:** $S \Rightarrow 0S$
+
 2. Aplique a regra duas vezes.
+> **Resposta:** $0S \Rightarrow 00S$
+
 3. Aplique a regra três vezes.
+> **Resposta:** $00S \Rightarrow 000S$
+
 4. Escreva a sequência completa de derivação.
+> **Resposta:** $S \Rightarrow 0S \Rightarrow 00S \Rightarrow 000S$
 
 ---
 
@@ -1011,6 +1073,15 @@ aaab
 $$
 
 **Escreva todos os passos da derivação.**
+
+> **Resposta:**
+> 1. Início: $S$
+> 2. Regra $S\rightarrow aS$: $S \Rightarrow aS$
+> 3. Regra $S\rightarrow aS$: $aS \Rightarrow aaS$
+> 4. Regra $S\rightarrow aS$: $aaS \Rightarrow aaaS$
+> 5. Regra $S\rightarrow b$: $aaaS \Rightarrow aaab$
+> 
+> **Derivação completa:** $S \Rightarrow aS \Rightarrow aaS \Rightarrow aaaS \Rightarrow aaab$
 
 ---
 
@@ -1163,11 +1234,22 @@ $$
 Determine se cada palavra pode ser gerada:
 
 1. `1`
+> **Resposta:** Sim ($S \Rightarrow 1$)
+
 2. `01`
+> **Resposta:** Sim ($S \Rightarrow 0S \Rightarrow 01$)
+
 3. `001`
+> **Resposta:** Sim ($S \Rightarrow 0S \Rightarrow 00S \Rightarrow 001$)
+
 4. `0001`
+> **Resposta:** Sim ($S \Rightarrow 0S \Rightarrow 00S \Rightarrow 000S \Rightarrow 0001$)
+
 5. `101`
+> **Resposta:** Não (a regra $S\rightarrow 1$ encerra a derivação, não permitindo novos símbolos).
+
 6. `1001`
+> **Resposta:** Não (não é possível gerar símbolos após o `1`).
 
 Para as palavras que podem ser geradas, apresente a derivação completa.
 
@@ -1659,7 +1741,7 @@ A palavra `1001` começa com `1` e depois possui outros símbolos, o que não é
 
 # Resumo dos conceitos
 
-| Conceito           | Significado                                                           |
+| Conceito            | Significado                                                           |
 | ------------------ | --------------------------------------------------------------------- |
 | $\Sigma$           | Alfabeto                                                              |
 | `a`, `b`, `0`, `1` | Símbolos                                                              |
@@ -1718,25 +1800,37 @@ Responda sem consultar o gabarito:
 
 A palavra `b` pode ser gerada?
 
+> **Resposta:** Sim ($S \Rightarrow b$).
+
 ### 2.
 
 A palavra `ab` pode ser gerada?
+
+> **Resposta:** Sim ($S \Rightarrow aS \Rightarrow ab$).
 
 ### 3.
 
 A palavra `aab` pode ser gerada?
 
+> **Resposta:** Sim ($S \Rightarrow aS \Rightarrow aaS \Rightarrow aab$).
+
 ### 4.
 
 A palavra `aaab` pode ser gerada?
+
+> **Resposta:** Sim ($S \Rightarrow aS \Rightarrow aaS \Rightarrow aaaS \Rightarrow aaab$).
 
 ### 5.
 
 A palavra `aba` pode ser gerada?
 
+> **Resposta:** Não (a regra $S\rightarrow b$ encerra a derivação e impede qualquer símbolo à direita do `b`).
+
 ### 6.
 
 Escreva a derivação completa de `aaaab`.
+
+> **Resposta:** $S \Rightarrow aS \Rightarrow aaS \Rightarrow aaaS \Rightarrow aaaaS \Rightarrow aaaab$
 
 ### 7.
 
@@ -1744,3 +1838,4 @@ Descreva, com suas palavras, o padrão das palavras geradas por essa gramática.
 
 > **Dica:** observe o que acontece quando aplicamos várias vezes $S\rightarrow aS$ e, finalmente, utilizamos $S\rightarrow b$.
 
+> **Resposta:** A gramática gera a linguagem $L(G) = \{a^n b \mid n \geq 0\}$, isto é, palavras compostas por zero ou mais letras `a` terminando obrigatoriamente com uma única letra `b`.
