@@ -292,7 +292,6 @@ O grupo deverá entregar um único arquivo `README.md`, contendo:
 
 ## Modelo para o desafio final
 
-```markdown
 ## Desafio final
 
 ### Problema escolhido
@@ -317,11 +316,18 @@ M = (Σ, Q, δ, q0, F)
 
 ### Evidência no JFLAP
 
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2b6768fb-2034-47f6-a194-6bbf95f18efd" />
+
+
+
 ### Conclusão
-```
+
 
 > **Importante:** não basta apresentar o diagrama. Demonstre como o AFD processa cada cadeia, estado por estado, até decidir pela aceitação ou rejeição.
 
 ---
 
 **Profa. Kadidja Valéria**
+
+```markdown
